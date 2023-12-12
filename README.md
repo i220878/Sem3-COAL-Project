@@ -11,3 +11,5 @@ Then that's it! Just run it and it'll show up. The directories (other than MASM3
 
 Gameplay video:
 https://youtu.be/B0cpoWkWj4A
+
+Also, little Easter Egg. In main.asm, if you write MenuFrames EQU 125 on line 343, and change "mainmenu\0000.bmp" to "mainmeme\0000.bmp", you'll play a different menu background. Enjoy!
