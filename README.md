@@ -1,6 +1,8 @@
 # Sem3-COAL-Project
 Pac Man with Win32API in Assembly
 
+NOTE: If running this, the navigation buttons are 'W' and 'S' for up and down, and ',', and '.' for Exit and Enter respectively. Due to shortage of time I couldn't be bothered to look into the ASCII values for the arrow keys, the Enter key, and Escape, so I just settled on this.
+
 We were required to make this in the Terminal. Someone taunted me, and I wanted to see just what I was capable of. So instead of doing the logical thing of doing what they've asked, I went above and beyond and spent 13 days thoroughly understanding WinAPI, reading books of it, trying to get it to work, failing a lot of times, and I mean a _lot_ of times, until eventually, on day 8 I finally managed to establish a workflow. All I needed was to learn how to draw things, how to move things, and how to time things, and after 8 days of suffering and pain, I had understood all of them.
 
 Then I proceeded to finalize the project in what little time I had. It was frustrating, but fun. I can say that for all of my projects, but especially this. I spent so much work and effort on it, and it paid off, because nobody on their first impression actually believes that this was made in Assembly. And yet, while researching all of this and learning it, I found articles and tutorials and documentation of people doing DirectX and OpenGL in Assembly. They made entire physics engines and 3D environments and even Chess AI's in Assembly, and they did it on machines hundreds of times slower than today, and without internet and without thorough documentation, unless books count. I've obtained a newfound respect for anyone who was responsible for those advancements. I never want to touch assembly again but this journey was absolutely worth it.
