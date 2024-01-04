@@ -16,4 +16,4 @@ If you run into an error of `CONSTANT EXPECTED` in winextra.inc, then just go to
 
 Then that's it! Just run it and it'll show up. The directories (other than MASM32 for the WinAPI Library) are portable, so there's no manual re-linking to be done. I hope you have fun playing or watching it as much as I did making it, if not more.
 
-Also, little Easter Egg. In main.asm, if you write MenuFrames EQU 125 on line 343, and change "mainmenu\0000.bmp" to "mainmeme\0000.bmp", you'll play a different menu background. Enjoy!
+Also, little Easter Egg. In main.asm, if you write MenuFrames EQU 125 on line 343, and change "mainmenu\0000.bmp" to "mainmeme\0000.bmp" on line 344, you'll play a different menu background. Enjoy!
