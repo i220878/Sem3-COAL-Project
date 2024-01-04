@@ -1390,6 +1390,9 @@ start:
 			push wParam
 			pop char
 
+			; Teacher said to do it with JUMPS only and if .IF was used anywhere than the project would get marked 0.
+			; It's way easier to just use the .IF if you can.
+
 			;.IF onScoreScreen == 1 && (char == '.' || char == ',')
 			;	mov onScoreScreen, 0
 			;	jmp mainMenuJmp
@@ -1780,6 +1783,21 @@ start:
 			jle frameNumThree
 			cmp frameNum, 8
 			jle frameNumTwo
+
+			; DO NOT DO THIS FOR DRAWING FRAMES. I ONLY DID IT BECAUSE I COULDN'T CHANGE IT IN TIME FOR THE PROJECT SUBMISSION DEADLINE.
+			; This method reads the image off the Hard Drive or the SSD for EVERY SINGLE FRAME. It's a lot of load on the storage, and at some point
+			; the game just outright stops rendering the frames as well. I did this because of shortage of time, and if you're reading
+			; this file for reference or learning, check how I rendered all the other images like the menu animation or the ghosts, using
+			; an array of hBitmaps instead, and then choosing which hBitmap in particular to send to the first buffer.
+			; I don't know how that method works behind the scenes as far as WinAPI is concerned, but my guess is that
+			; unlike this method, which reads off the Hard Drive/SSD for every single frame, it just stores the image into RAM and then reads
+			; off that instead.
+			;
+			; That guess could be wrong as well because Visual Studio doesn't report high RAM usage. The majority of the usage is due to the
+			; uncompressed .wav files for music. If you remove those then it only uses 2MB of RAM throughout, even though the Bitmap files
+			; alone take up more than 4MB.
+			;
+			; All I know is, DON'T DO THIS METHOD. I did it out of shortage of time, but it WILL break, and it's unnecessary load on your storage.
 
 			frameNumOne:
 				cmp PacManD, 'w'
