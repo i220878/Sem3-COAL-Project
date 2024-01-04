@@ -12,6 +12,8 @@ Then I proceeded to finalize the project in what little time I had. It was frust
 
 To run it, first download the installer from http://www.masm32.com/download.htm. It's super convenient, there's no linking or setup. You just download it, run it, and it'll check if the files can be installed, and if so, it'll install them. Then, for Visual Studio, make sure to enable MASM in build dependencies and set the Debugger to 32-bit. Finally, under Project > Project Properties, Go to Linker > System and set SubSystem to Windows (/SUBSYSTEM:WINDOWS), and in Linker > Advanced, write 'start' in the Entry Point.
 
+If you run into an error of `CONSTANT EXPECTED` in winextra.inc, then just go to that file and replace the [Square Brackets] with (Round Brackets). https://stackoverflow.com/questions/71579808/masm-14-constant-expected-in-winextra-inc has more details.
+
 Then that's it! Just run it and it'll show up. The directories (other than MASM32 for the WinAPI Library) are portable, so there's no manual re-linking to be done. I hope you have fun playing or watching it as much as I did making it, if not more.
 
 Also, little Easter Egg. In main.asm, if you write MenuFrames EQU 125 on line 343, and change "mainmenu\0000.bmp" to "mainmeme\0000.bmp", you'll play a different menu background. Enjoy!
